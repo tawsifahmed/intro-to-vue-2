@@ -3,6 +3,9 @@ new Vue({
     data: {
         name: 'Ahmed',
         job: 'Intern',
+        website: 'https://tawsifahmed.netlify.app/',
+        github: 'https://github.com/tawsifahmed',
+        websiteTag: '<a target="_blank" href="https://tawsifahmed.netlify.app/">My Website</a>'
     },
     methods: {
         greet: function (time) {

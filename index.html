@@ -19,6 +19,11 @@
     <div id="vue-app">
         <h2>Name: {{ name }}</h2>
         <p>Job: {{job}}</p>
+        <a v-bind:href="website" target="_blank">Portfolio</a>
+        <a :href="github" target="_blank">Github</a>
+        <input type="text" :value="job">
+        <p v-html="websiteTag"></p>
+
         <h2>{{greet('afternoon')}}</h2>
     </div>
 
