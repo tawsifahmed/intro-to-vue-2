@@ -18,7 +18,9 @@
 <body>
     <div id="vue-app">
         <h2>Events</h2>
-
+        <button v-on:click="age++">Add a year</button>
+        <button v-on:click="age--">Substract a year</button>
+        <p>My age is {{age}}</p>
 
     </div>
 
