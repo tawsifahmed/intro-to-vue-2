@@ -17,17 +17,12 @@
 
 <body>
     <div id="vue-app">
-        <h2>KeyBoard Events</h2>
+        <h2>Computed Properties</h2>
 
-        <label>Name:</label>
-        <input type="text" v-model="name">
-
-        <span style="color: red;">{{name}}</span>
-        <br>
-        <br>
-        <label>Age:</label>
-        <input type="text" v-model="age">
-        <span style="color: skyblue;">{{age}}</span>
+        <button @click="c++">Add to C</button>
+        <button @click="d++">Add to D</button>
+        <p>C - {{c}}</p>
+        <p>D - {{d}}</p>
     </div>
 
     <script src="./app.js"></script>
