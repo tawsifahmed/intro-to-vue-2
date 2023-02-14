@@ -10,6 +10,12 @@ new Vue({
         },
         subtract: function () {
             this.ageBrother--;
+        },
+        add10: function (inc) {
+            this.ageBrother += inc;
+        },
+        subtract10: function (dec) {
+            this.ageBrother -= dec;
         }
     }
 });      
