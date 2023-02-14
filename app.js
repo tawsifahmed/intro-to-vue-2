@@ -1,9 +1,8 @@
 new Vue({
     el: '#vue-app',
     data: {
-        age: 25,
-        c: 0,
-        d: 0,
+        available: true,
+        nearby: false,
     },
     methods: {
         // addToC: function () {
