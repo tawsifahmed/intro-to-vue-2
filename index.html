@@ -17,14 +17,11 @@
 
 <body>
     <div id="vue-app">
-        <h2>Computed Properties</h2>
+        <h2>Dynamic CSS</h2>
 
-        <button @click="c++">Add to C</button>
-        <button @click="d++">Add to D</button>
-        <p>C - {{c}}</p>
-        <p>D - {{d}}</p>
-        <p>Age + C = {{addToC}}</p>
-        <p>Age + D = {{addToD}}</p>
+        <h3>ex 1 </h3>
+        <div v-bind:class="{red: true}"></div>
+        <h3>ex 2</h3>
     </div>
 
     <script src="./app.js"></script>
