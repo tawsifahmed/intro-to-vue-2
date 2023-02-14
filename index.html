@@ -34,6 +34,7 @@
         <div id="canvas" v-on:mousemove="updateXY">{{x}}, {{y}}</div>
         <br>
         <a v-on:click="click" href="https://www.github.com/tawsifahmed" target="_blank">Github</a>
+        <a v-on:click.prevent="click" href="https://www.github.com/tawsifahmed" target="_blank">Github {prevent}</a>
     </div>
 
     <script src="./app.js"></script>
