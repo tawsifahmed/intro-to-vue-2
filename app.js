@@ -6,6 +6,7 @@ new Vue({
     },
     methods: {
         logName: function () {
+            this.name
             console.log('You entered your name');
         },
         logAge: function () {

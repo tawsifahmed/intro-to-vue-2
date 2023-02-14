@@ -20,11 +20,14 @@
         <h2>KeyBoard Events</h2>
 
         <label>Name:</label>
-        <input type="text" v-on:keyup="logName">
-        <span>{{name}}</span>
+        <input type="text" v-model="name">
+
+        <span style="color: red;">{{name}}</span>
+        <br>
+        <br>
         <label>Age:</label>
-        <input type="text" v-on:keyup="logAge">
-        <span>{{age}}</span>
+        <input type="text" v-model="age">
+        <span style="color: skyblue;">{{age}}</span>
     </div>
 
     <script src="./app.js"></script>
