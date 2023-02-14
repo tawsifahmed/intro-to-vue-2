@@ -25,12 +25,15 @@
 
         <p>My brother's age is {{ageBrother}}</p>
         <button v-on:click="add">Add a year</button>
+        <button v-on:click.once="add">Add a year only once</button>
         <button v-on:click="subtract">Substract a year</button>
         <button v-on:dblclick="add10(10)">Add 10 years(click2x)</button>
         <button v-on:dblclick="subtract10(10)">Substract 10 years (click2x)</button>
         <br>
         <br>
         <div id="canvas" v-on:mousemove="updateXY">{{x}}, {{y}}</div>
+        <br>
+        <a v-on:click="click" href="https://www.github.com/tawsifahmed" target="_blank">Github</a>
     </div>
 
     <script src="./app.js"></script>
