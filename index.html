@@ -23,7 +23,13 @@
         <div @click="available =!available" v-bind:class="{available: available}">
             <span>Gin</span>
         </div>
+
         <h3>ex 2</h3>
+        <button v-on:click="nearby1 = !nearby1">Toogle nearby</button>
+        <button v-on:click="available1 = !available1">Toogle available</button>
+        <div v-bind:class="compClasses">
+            <span>Ichi</span>
+        </div>
     </div>
 
     <script src="./app.js"></script>
