@@ -21,6 +21,16 @@
         <ul>
             <li v-for="character in characters">{{character}}</li>
         </ul>
+        <ul>
+            <li v-for="ninja in ninjas">{{ninja.name}} - Age {{ninja.age}}</li>
+        </ul>
+        <ul>
+            <li v-for="(ninja, index) in ninjas">{{index}}. {{ninja.name}} - Age {{ninja.age}}</li>
+        </ul>
+        <template v-for="(ninja, index) in ninjas">
+            <h3>{{index}}. {{ninja.name}}</h3>
+            <p>Age: {{ninja.age}}</p>
+        </template>
     </div>
 
     <script src="./app.js"></script>
